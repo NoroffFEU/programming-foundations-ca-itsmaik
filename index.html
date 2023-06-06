@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Foundations CA</title>
-    <link href='css/style.css' rel='stylesheet' />
-    <link rel='icon' href='data:;base64,=' />
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>iPad PRO X</title>
+</head>
 <body>
 
-    <script src="js/script.js"></script>
-</body>
+  <main class="wrapper">
+    <div class="info">
+      <div class="headlines">
+        <h1 id="brand"></h1>
+        <h2 id="model"></h2>
+      </div>
 
+      <p>
+        Elevate your home décor and entertainment experience with the stunning Samsung 'The Frame' TV. Designed to seamlessly blend into any living space, 
+        this innovative television combines cutting-edge technology with the aesthetics of a beautifully framed artwork. Whether you're watching your favorite movies, 
+        TV shows, or displaying captivating digital art, 'The Frame' delivers an immersive viewing experience like no other.
+      </p>
+
+      <label for="chooseSize">Choose between different sizes:</label>
+        <select name="chooseSize" id="chooseSize">
+          <option value="17" id="option1">17-inches</option>
+          <option value="20" id="option2">20-inches</option>
+          <option value="25" id="option3">25-inches</option>
+        </select>
+
+      <div class="color-options">
+        <h3>Select on of the following colors:</h3>
+        <span id="color-opt"></span>
+      </div>
+
+      <div class="colors">
+        <button id="color1" class="circle"></button>
+        <button id="color2" class="circle"></button>
+        <button id="color3" class="circle"></button>
+        <button id="color4" class="circle"></button>
+      </div>
+
+      <div class="quantity">
+        <h3>Quantity:</h3>
+        <input id="select" type="number" min="0" max="10">
+        <p id="inStock"></p>
+      </div>
+
+      <div class="prices">
+        <h3>PRICE:</h3>
+        <span id="price"></span>
+      </div>
+
+      <button id="addBtn">ADD TO CART</button>
+    </div>
+
+    <div class="imgContainer">
+      <img src="/images/ipad.jpg" alt="An iPad from Apple with apps and a vibrant background-image">
+    </div>
+  </main>    
+  <script src="js/script.js"></script>
+</body>
 </html>

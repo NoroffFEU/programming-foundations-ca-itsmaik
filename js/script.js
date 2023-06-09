@@ -26,8 +26,6 @@ var ipad = {
             name: "TV",
             batteryConsumption: 30
         },
-
-
         {  
             name: "FaceTime",
             batteryConsumption: 70
@@ -37,11 +35,24 @@ var ipad = {
             name: "Calendar",
             batteryConsumption: 10
         },
-
-
     ],
-    openApp: function(){
-        
+    openApp: function(app){
+        return ipad.batteryLife - ipad.apps[app].batteryConsumption;
     }
+}
+
+console.log(ipad.apps[0].name);
+
+var appBtn = document.getElementById("appButton");
+
+appBtn.addEventListener("click", displayBatteryLife);
+
+function displayBatteryLife(){
+console.log(appBtn.innerText);
+var appName = appBtn.innerText;
+ for(var i = 0; i < ipad.apps.length; i++ ) {
+    console.log(JSON.stringify(i));
+ }
 
 }
+

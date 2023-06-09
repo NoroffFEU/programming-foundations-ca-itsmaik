@@ -1,61 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@200;300;400&display=swap"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <title>iPad PRO X</title>
+    <title>iPad PRO X</title>
 </head>
+
 <body>
 
-  <main class="wrapper">
-    <div class="info">
-      <div class="headlines">
-        <h1 id="brand"></h1>
-        <h2 id="model"></h2>
-      </div>
+    <main class="wrapper">
+        <div class="text">
+            <div class="headlines">
+                <h1 id="brand"></h1>
+                <h2 id="name"></h2>
+            </div>
 
-      <label class="h1" for="storage">Storage:</label>
-        <select name="chooseSize" id="chooseSize">
-          <option value="1">32GB</option>
-          <option value="2">64GB</option>
-          <option value="3">120GB</option>
-        </select>
+            <label class="h1" for="storage">Storage:</label>
+            <select name="chooseSize" id="chooseSize">
+                <option value="1">32GB</option>
+                <option value="2">64GB</option>
+                <option value="3">120GB</option>
+            </select>
 
-      <div class="sim-card">
-        <h1 class="h1">Sim-Card:</h1>
-        <button>Yes</button>
-        <button>No</button>
-        <span id="sim-card-opt"></span>
-      </div>
+            <div class="sim-card">
+                <h1 class="h1">Sim-Card:</h1>
+                <button class="color-btn" id="yes">Yes</button>
+                <button class="color-btn" id="no">No</button>
+                <span id="sim-card-opt"></span>
+            </div>
 
-      <div class="battery">
-        <h1 class="h1">Batery Life:</h1>
-        <span id="sim-card-opt">100%</span>
-        <p id="inStock"></p>
-      </div>
+            <div class="battery">
+                <h1 class="h1">Battery Life:</h1>
+                <span id="battery-life">100%</span>
+            </div>
 
-      <div class="apps">
-        <div id="appButton">Home</div>
-        <div class="app">Photos</div>
-        <div class="app">Contacts</div>
-        <div class="app">Camera</div>
-        <div class="app">TV</div>
-        <div class="app">Face Time</div>
-        <div class="app">Calendar</div>
-      </div>
+            <div class="apps">
 
-    <div class="img-ctn">
-      <img src="/images/ipad.jpg" alt="An iPad from Apple with apps and a vibrant background-image">
-    </div>
-  </main>    
-  <script src="js/script.js"></script>
+            </div>
+
+            <div class="img-ctn">
+                <img src="/images/ipad.jpg" alt="An iPad from Apple with apps and a vibrant background-image">
+            </div>
+    </main>
+    <script src="js/ipad.js"></script>
 </body>
+
 </html>
